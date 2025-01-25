@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST 실습</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>사진을 올려주세요</h1>
+    <div id="uploadForm">
+        <input type="file" id="fileInput" accept="image/*">
+        <button id="uploadButton">Predict</button>
+        <p id="result"></p>
+        <img id="uploadedImage">
+    </div>
+
+    <script src="{{ url_for('static', filename='js/mnist.js' )}}"></script>
+</body>
+</html>
